@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Common styles for all screens */
+        body {
+            background-color: rgb(158, 178, 141);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            opacity: 0.8;
+        }
+        .logo_ img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            opacity: 0.8;
+        }
+        .logo-group img{
+          
+            height:50px;
+          
+            opacity: 0.8;
+        }
+
+        /* Navbar styles */
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+            padding: 10px;
+        }
+
+        .menu li a:hover {
+            color: orange;
+        }
+
+        /* Content section styles */
+        .data {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .data h3 {
+            font-size: 30px;
+            font-family: 'Times New Roman';
+            background: linear-gradient(rgb(3, 3, 72), rgb(52, 52, 18), rgb(120, 26, 42), rgb(3, 56, 74));
+            margin: 20px;
+            color: whitesmoke;
+            padding: 20px;
+        }
+
+        .data p {
+            font-size: 16px;
+            font-family: Arial;
+            color: orange;
+        }
+
+        .data h4 {
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 20px;
+        }
+
+        .data ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .data ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .data ul li a img {
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .data ul li a img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: row;
+                text-align: center;
+            }
+
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="logo-group">
+            <img src="shivaliklogo-removebg-preview.png" alt="Shivalik Logo">
+        </div>
+        <div class="logo_">
+            <img src="Nacclogo.png" alt="Logo">
+        </div>
+        
+    </header>
+
+    <nav class="navbar" style="background-color: black;">
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="AA.html">ABOUT</a></li>
+            <li><a href="file.html">SERVICE</a></li>
+            <li><a href="Moments.html">MOMENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="data">
+        <h3>Resources For You <p>Want to learn something new? Here are all the resources you might need.</p></h3>
+        <h4>Topics</h4>
+        <ul>
+            <li>
+                <a href="https://drive.google.com/file/d/1Max3G1dX5pHGEcmf4WD_127kA1z3ASbk/view?usp=sharing"><img src="datastructure.jpg" alt="Data Structure"></a>
+            </li>
+            <li>
+                <a href="#"><img src="python.jpg" alt="Python"></a>
+            </li>
+            <li>
+                <a href="#"><img src="comp.jpg" alt="Computer"></a>
+            </li>
+            <li>
+                <a href="#"><img src="cprog.webp" alt="Data Structure"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
