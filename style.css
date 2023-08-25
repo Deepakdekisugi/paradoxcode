@@ -1,0 +1,246 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Common styles for all screens */
+.header, .navbar, .main-content, .footer {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styles */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.logo img, .logo_ img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    opacity: 0.8;
+}
+
+.logo-group img {
+    width: px;
+    height: 50px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row; /* Stack elements vertically */
+    }
+
+    .logo-group {
+        margin-top: 10px; /* Add spacing between logo-group and other logos */
+    }
+
+    .logo, .logo_ {
+        text-align: center; /* Center logos */
+        margin: 10px 0; /* Add spacing between logos */
+    }
+
+    .logo img, .logo_ img {
+        width: 60px; /* Adjust logo size for smaller screens */
+        height: 60px;
+    }
+
+    .logo-group img {
+        margin-right: 5px; /* Adjust spacing between small logos */
+    }
+}
+
+
+/* Navbar styles */
+/* Menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu li a:hover {
+    color: orange; /* Change color to orange on hover */
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+}
+
+/* Team styles */
+.team {
+    background: rgb(209, 211, 214);
+    padding: 20px;
+}
+
+.team h1 {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+
+.team ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.team ul li {
+    list-style: none;
+    margin: 0 15px;
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .header, .navbar, .main-content, .footer {
+        padding: 10px;
+    }
+
+    .team ul li {
+        flex: 1 1 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+/* Navbar styles */
+.navbar {
+    background-color: black;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a background color to improve readability */
+    padding: 10px 0; /* Adjust vertical padding */
+}
+
+.menu li {
+    margin: 0 10px; /* Add some spacing between menu items */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center items horizontally */
+        background-color: transparent; /* Remove the background color */
+        padding: 0; /* Remove padding */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Add spacing between stacked menu items */
+    }
+}
+/* Content styles */
+.content {
+    width:100 %;
+    max-width:100%
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(209, 211, 214); /* Apply the same background color as the team section */
+    background-size: cover;
+    
+
+    
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    margin-top: 5%;
+    letter-spacing: 1.5px;
+}
+
+.content .para {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.content .con {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+}
+
+.con:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 40px;
+    display: block;
+    margin-top: 15px;
+}
